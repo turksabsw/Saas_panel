@@ -170,6 +170,58 @@
     .media-name{font-size:11px;font-weight:500;color:var(--t);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-bottom:4px}
     .media-meta{display:flex;align-items:center;justify-content:space-between;font-size:10px;color:var(--td)}
     .media-type-badge{font-size:9px;font-weight:600;padding:1px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:.3px}
+    /* RFQ Sales Module */
+    .rfq-wf{background:var(--sr);border:1px solid var(--bs);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+    .rfq-wf-steps{display:flex;align-items:flex-start;overflow-x:auto;padding-bottom:4px}
+    .rfq-wf-step{display:flex;align-items:center;flex-shrink:0}
+    .rfq-wf-node-wrap{display:flex;flex-direction:column;align-items:center;gap:5px;min-width:72px;cursor:default}
+    .rfq-wf-node-wrap.clickable{cursor:pointer}
+    .rfq-wf-track{position:relative;display:flex;align-items:center;width:100%;justify-content:center;height:32px}
+    .rfq-wf-line{position:absolute;top:50%;transform:translateY(-50%);height:2px}
+    .rfq-wf-dot{width:32px;height:32px;border-radius:50%;z-index:1;display:flex;align-items:center;justify-content:center;font-size:12px;transition:all .2s}
+    .rfq-wf-label{text-align:center;font-size:9px;letter-spacing:.02em;white-space:nowrap}
+    .rfq-wf-terminal{display:flex;gap:8px;margin-top:10px;padding-top:10px;border-top:1px solid var(--bs)}
+    .rfq-stat-strip{display:flex;align-items:center;overflow-x:auto;flex-shrink:0;border-bottom:1px solid var(--bs);background:var(--sr);margin-bottom:12px;border-radius:8px;border:1px solid var(--bs)}
+    .rfq-stat-item{display:flex;flex-direction:column;align-items:center;padding:8px 18px;border-right:1px solid var(--bs)}
+    .rfq-stat-item:last-child{border-right:none}
+    .rfq-tabs{display:flex;border-bottom:1px solid var(--bs);background:var(--sr);padding:0 20px;overflow-x:auto;flex-shrink:0;margin-bottom:12px;border-radius:8px 8px 0 0}
+    .rfq-tab{display:inline-flex;align-items:center;gap:6px;padding:10px 14px;font-size:12px;font-weight:600;background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer;white-space:nowrap;color:var(--td);font-family:inherit;transition:color .15s}
+    .rfq-tab.active{color:var(--pl);border-bottom-color:var(--pl)}
+    .rfq-sec{background:var(--sr);border:1px solid var(--bs);border-radius:10px;padding:18px;margin-bottom:12px;animation:fiu .25s ease forwards;opacity:0}
+    .rfq-sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--bs)}
+    .rfq-sec-head span{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--td)}
+    .rfq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .rfq-grid.c3{grid-template-columns:1fr 1fr 1fr}
+    .rfq-field{display:flex;flex-direction:column;gap:5px}
+    .rfq-field label{font-size:11px;font-weight:600;color:var(--td);letter-spacing:.05em;text-transform:uppercase}
+    .rfq-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;letter-spacing:.02em}
+    .rfq-badge .bdot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+    .rfq-toggle-wrap{display:inline-flex;align-items:center;gap:9px;cursor:pointer;user-select:none}
+    .rfq-toggle{position:relative;width:36px;height:20px;border-radius:10px;transition:background .15s;display:inline-block;flex-shrink:0}
+    .rfq-toggle .knob{position:absolute;top:2px;width:16px;height:16px;border-radius:50%;background:#fff;transition:left .15s}
+    .rfq-target-card{flex:1;padding:10px 12px;border-radius:8px;cursor:pointer;border:1.5px solid var(--bs);transition:all .15s}
+    .rfq-target-card.sel{border-color:var(--p);background:rgba(124,58,237,.06)}
+    .rfq-alert{border-radius:6px;padding:7px 12px;font-size:12px;margin-bottom:6px}
+    .rfq-child-tbl{width:100%;border-collapse:collapse;min-width:700px}
+    .rfq-child-tbl th{text-align:left;padding:8px 10px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--td);white-space:nowrap}
+    .rfq-child-tbl td{padding:4px 6px}
+    .rfq-child-tbl thead tr{border-bottom:2px solid var(--bs)}
+    .rfq-child-tbl tbody tr{border-bottom:1px solid var(--bs)}
+    .rfq-list-tbl{width:100%;border-collapse:collapse}
+    .rfq-list-tbl th{text-align:left;padding:9px 12px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--td);white-space:nowrap;background:var(--so);border-bottom:1px solid var(--bs)}
+    .rfq-list-tbl tbody tr{border-bottom:1px solid var(--bs);cursor:pointer;transition:background .1s}
+    .rfq-list-tbl tbody tr:hover{background:rgba(124,58,237,.04)}
+    .rfq-list-tbl td{padding:10px 12px;font-size:12px;color:var(--tm)}
+    .rfq-quote-cnt{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;font-size:12px;font-weight:800;border-radius:999;padding:0 6px}
+    .rfq-stat-chip{display:flex;align-items:center;gap:7px;border-radius:7px;padding:5px 12px;cursor:pointer;transition:all .15s;border:1px solid var(--bs);background:var(--sr)}
+    .rfq-pbar{height:6px;border-radius:3px;overflow:hidden;background:var(--so)}
+    .rfq-pbar-fill{height:100%;border-radius:3px;transition:width .4s}
+    .sb-sales .sg-title{padding:6px 14px 4px;display:flex;align-items:center;justify-content:space-between}
+    .sb-sales .sg-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--td)}
+    .sb-sales .sg-count{font-size:10px;border-radius:999;padding:1px 6px;font-weight:700}
+    .sb-sales .sl{padding:7px 14px;font-size:12px;cursor:pointer;color:var(--tm);transition:all .1s;border-left:2px solid transparent}
+    .sb-sales .sl:hover{background:var(--so);color:var(--t)}
+    .sb-sales .sl.active{color:var(--t);font-weight:700;background:rgba(124,58,237,.08);border-left-color:var(--p)}
   </style>
 </head>
 <body>
@@ -198,16 +250,31 @@
       </div>
     </div>
   </aside>
+  <!-- SALES SIDEBAR -->
+  <aside class="sb sb-sales" :class="{collapsed:sidebarCollapsed||activeRail!=='sales'}">
+    <div class="sb-h"><h2>Satis & Siparis</h2><button class="sb-tog" @click="sidebarCollapsed=!sidebarCollapsed"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16" height="16"><path d="M11 19l-7-7 7-7M18 19l-7-7 7-7"/></svg></button></div>
+    <div class="sb-body">
+      <div v-for="sg in salesSidebarGroups" :key="sg.title">
+        <div class="sg-title"><span class="sg-label">{{sg.title}}</span><span class="sg-count" :style="{background:sg.active?'var(--p)':'var(--so)',color:sg.active?'#fff':'var(--td)'}">{{sg.links.length}}</span></div>
+        <div v-for="sl in sg.links" :key="sl.label" class="sl" :class="{active:activeSalesLink===sl.label}" @click="selectSalesLink(sl.label)">{{sl.label}}</div>
+      </div>
+    </div>
+  </aside>
   <main class="ma">
     <div class="tb">
       <div class="tb-l">
-        <button v-if="sidebarCollapsed&&activeRail==='products'" class="sb-tog" @click="sidebarCollapsed=false" style="margin-right:4px"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16" height="16"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        <button v-if="sidebarCollapsed&&(activeRail==='products'||activeRail==='sales')" class="sb-tog" @click="sidebarCollapsed=false" style="margin-right:4px"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16" height="16"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
         <div class="bc">
           <a @click.prevent="switchRail('home')">Ana Sayfa</a><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
           <template v-if="activeRail==='products'">
             <a @click.prevent="currentView='list'">TradeHub Catalog</a><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
             <a v-if="currentView==='detail'" @click.prevent="goBackToList">{{activeLink}}</a><span v-else class="cur">{{activeLink}}</span>
             <template v-if="currentView==='detail'"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg><span class="cur">{{isNewRecord?'Yeni':selectedRecord?.name}}</span></template>
+          </template>
+          <template v-else-if="activeRail==='sales'">
+            <a @click.prevent="rfqView='list'">Satis</a><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+            <a v-if="rfqView==='detail'||rfqView==='new'" @click.prevent="rfqGoBack">{{activeSalesLink}}</a><span v-else class="cur">{{activeSalesLink}}</span>
+            <template v-if="rfqView==='detail'||rfqView==='new'"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg><span class="cur">{{rfqView==='new'?'Yeni':rfqCurrent?.rfq_code}}</span></template>
           </template>
           <template v-else><span class="cur">{{activeRailLabel}}</span></template>
         </div>
@@ -217,6 +284,10 @@
         <template v-if="activeRail==='products'">
           <button class="btn"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Raporlar</button>
           <button class="btn pri" @click="createNew"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Yeni Ekle</button>
+        </template>
+        <template v-if="activeRail==='sales'">
+          <button class="btn"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Raporlar</button>
+          <button class="btn pri" @click="rfqCreateNew"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Yeni Ekle</button>
         </template>
       </div>
     </div>
@@ -332,6 +403,248 @@
         <div class="sb2" :class="{hid:!activityOpen}"><div style="display:flex;flex-direction:column;gap:12px"><div v-for="log in activityLogs" :key="log.id" style="display:flex;gap:12px;align-items:flex-start"><div style="width:32px;height:32px;border-radius:8px;background:var(--so);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><div><div style="font-size:13px;color:var(--t)">{{log.action}}</div><div style="font-size:11px;color:var(--td);margin-top:2px">{{log.user}} · {{log.time}}</div></div></div></div></div>
       </div>
     </div>
+    <!-- RFQ LIST -->
+    <div class="con" v-else-if="activeRail==='sales'&&rfqView==='list'">
+      <div class="con-h"><div><h1>RFQ</h1><div class="rc">{{rfqFiltered.length}} kayit bulundu</div></div><div class="ca"><button class="btn pri" @click="rfqCreateNew"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16" height="16"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Yeni Ekle</button><button class="btn" @click="rfqList=rfqList.slice()"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>Yenile</button></div></div>
+      <!-- Status chips -->
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+        <div v-for="(cnt,st) in rfqStatusCounts" :key="st" class="rfq-stat-chip" :class="{active:rfqStatusFilter===st}" :style="{borderColor:rfqStatusFilter===st?rfqStatusCfg[st].dot:'var(--bs)'}" @click="rfqStatusFilter=rfqStatusFilter===st?'':st">
+          <span style="font-size:16px;font-weight:900" :style="{color:rfqStatusCfg[st].color}">{{cnt}}</span>
+          <span style="font-size:11px;font-weight:600" :style="{color:rfqStatusFilter===st?rfqStatusCfg[st].color:'var(--tm)'}">{{rfqStatusCfg[st].label}}</span>
+        </div>
+      </div>
+      <!-- Search & filter -->
+      <div class="fb"><div class="fs"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg><input v-model="rfqSearch" placeholder="RFQ ara..."/></div>
+        <button v-if="rfqSearch||rfqStatusFilter" class="fd" @click="rfqSearch='';rfqStatusFilter=''"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Temizle</button>
+      </div>
+      <!-- Table -->
+      <div class="dt" style="overflow-x:auto">
+        <table class="rfq-list-tbl">
+          <thead><tr><th>RFQ Kodu</th><th>Baslik</th><th>Alici / Sirket</th><th>Durum</th><th>Hedef</th><th>Teklifler</th><th>Son Tarih</th><th>Goruntuleme</th><th></th></tr></thead>
+          <tbody>
+            <tr v-if="rfqFiltered.length===0"><td colspan="9" style="text-align:center;padding:60px 20px;color:var(--td)">
+              <div style="font-size:32px;opacity:.3;margin-bottom:12px">&#128237;</div>
+              <div style="font-size:14px;font-weight:600;margin-bottom:4px">Henuz kayit yok</div>
+              <div style="font-size:12px">{{rfqSearch||rfqStatusFilter?'Filtre kriterlerine uygun sonuc bulunamadi.':'Ilk RFQ kaydinizi olusturun'}}</div>
+            </td></tr>
+            <tr v-for="(r,idx) in rfqFiltered" :key="r.name" @click="rfqOpenDetail(r)" :style="{animationDelay:(idx*.02)+'s'}" style="animation:fi .25s ease forwards">
+              <td><span class="mono" style="font-size:10px;color:var(--td);background:var(--so);padding:2px 6px;border-radius:4px">{{r.rfq_code.slice(-12)}}</span></td>
+              <td style="max-width:200px"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:13px;font-weight:700;color:var(--t);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:180px">{{r.title}}</span><span v-if="r.requires_nda" style="font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;background:rgba(245,158,11,.12);color:#f59e0b">NDA</span></div></td>
+              <td><div style="display:flex;align-items:center;gap:8px"><div style="width:28px;height:28px;border-radius:50%;background:rgba(124,58,237,.08);border:1.5px solid rgba(124,58,237,.3);color:var(--p);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">{{r.buyer_name?r.buyer_name[0]:'?'}}</div><div><div style="font-size:12px;font-weight:600;color:var(--t);line-height:1.2">{{r.buyer_name}}</div><div style="font-size:10px;color:var(--td)">{{r.buyer_company}}</div></div></div></td>
+              <td><span class="rfq-badge" :style="{background:rfqStatusCfg[r.status]?.bg,color:rfqStatusCfg[r.status]?.color}"><span class="bdot" :style="{background:rfqStatusCfg[r.status]?.dot}"></span>{{rfqStatusCfg[r.status]?.label}}</span></td>
+              <td><span style="font-size:11px;color:var(--td)">{{r.target_type}}</span></td>
+              <td><span class="rfq-quote-cnt" :style="{color:r.quote_count>0?'#fff':'var(--td)',background:r.quote_count>0?'var(--p)':'var(--so)'}">{{r.quote_count}}</span></td>
+              <td><span v-if="r.deadline" style="font-size:11px;font-weight:700;padding:2px 7px;border-radius:4px" :style="{background:rfqDaysleft(r.deadline)<0?'rgba(239,68,68,.12)':rfqDaysleft(r.deadline)<=3?'rgba(245,158,11,.12)':'var(--so)',color:rfqDaysleft(r.deadline)<0?'#ef4444':rfqDaysleft(r.deadline)<=3?'#f59e0b':'var(--td)'}">{{rfqDaysleft(r.deadline)<0?'Gecti':rfqDaysleft(r.deadline)===0?'Bugun':rfqDaysleft(r.deadline)+'g'}}</span><span v-else style="color:var(--td);font-size:11px">&mdash;</span></td>
+              <td><div v-if="r.is_view_limited"><div style="font-size:10px;color:var(--td);margin-bottom:3px">{{r.current_views}}/{{r.max_views}}</div><div class="rfq-pbar" style="width:56px"><div class="rfq-pbar-fill" :style="{width:Math.min(100,Math.round(r.current_views/r.max_views*100))+'%',background:r.current_views/r.max_views>=.9?'#ef4444':r.current_views/r.max_views>=.7?'#f59e0b':'var(--p)'}"></div></div></div><span v-else style="font-size:10px;color:var(--td)">&mdash;</span></td>
+              <td style="text-align:right"><button class="btn" style="padding:4px 10px;font-size:11px" @click.stop="rfqOpenDetail(r)">Detay &rarr;</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="padding:8px 16px;border-top:1px solid var(--bs);display:flex;justify-content:space-between;align-items:center"><span style="font-size:11px;color:var(--td)">{{rfqFiltered.length}} / {{rfqList.length}} kayit</span></div>
+      </div>
+    </div>
+    <!-- RFQ DETAIL -->
+    <div class="con" v-else-if="activeRail==='sales'&&(rfqView==='detail'||rfqView==='new')" style="padding:0;display:flex;flex-direction:column">
+      <!-- Detail topbar -->
+      <div style="background:var(--sr);border-bottom:1px solid var(--bs);padding:10px 20px;display:flex;align-items:center;gap:12px;flex-shrink:0">
+        <button class="f-back" @click="rfqGoBack"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>Geri</button>
+        <span class="mono" style="font-size:10px;color:var(--td);background:var(--so);padding:2px 7px;border-radius:4px;flex-shrink:0">{{rfqDoc.rfq_code||'Yeni RFQ'}}</span>
+        <h2 style="margin:0;font-size:14px;font-weight:800;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{rfqDoc.title||'Isimsiz RFQ'}}</h2>
+        <span class="rfq-badge" :style="{background:rfqStatusCfg[rfqDoc.status]?.bg,color:rfqStatusCfg[rfqDoc.status]?.color,padding:'4px 10px',fontSize:'11px'}"><span class="bdot" :style="{background:rfqStatusCfg[rfqDoc.status]?.dot}"></span>{{rfqStatusCfg[rfqDoc.status]?.label}}</span>
+        <button v-if="rfqDoc.status==='Draft'&&rfqView!=='new'&&rfqTransitions[rfqDoc.status]?.includes('Published')" class="btn" style="background:#c9900a;border-color:#c9900a;color:#fff" @click="rfqModal={status:'Published'}"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg> Yayinla</button>
+        <button v-if="rfqDirty" class="btn pri" @click="rfqSave"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg> Kaydet</button>
+      </div>
+      <!-- Workflow bar -->
+      <div v-if="rfqView!=='new'" style="padding:12px 20px 6px;flex-shrink:0">
+        <div class="rfq-wf">
+          <div class="rfq-wf-steps">
+            <div v-for="(s,i) in rfqFlowSteps" :key="s" class="rfq-wf-step">
+              <div class="rfq-wf-node-wrap" :class="{clickable:rfqTransitions[rfqDoc.status]?.includes(s)}" @click="rfqTransitions[rfqDoc.status]?.includes(s)&&(rfqModal={status:s})">
+                <div class="rfq-wf-track">
+                  <div v-if="i>0" class="rfq-wf-line" style="right:50%;left:0" :style="{background:(rfqIsCompleted(s)||s===rfqDoc.status)?'var(--p)':'var(--bs)'}"></div>
+                  <div v-if="i<rfqFlowSteps.length-1" class="rfq-wf-line" style="left:50%;right:0" :style="{background:rfqIsCompleted(s)?'var(--p)':'var(--bs)'}"></div>
+                  <div class="rfq-wf-dot" :style="{background:s===rfqDoc.status?'var(--p)':rfqIsCompleted(s)?'rgba(124,58,237,.06)':rfqTransitions[rfqDoc.status]?.includes(s)?'var(--so)':'var(--sr)',border:'2px solid '+(s===rfqDoc.status?'var(--p)':rfqIsCompleted(s)?'rgba(124,58,237,.3)':rfqTransitions[rfqDoc.status]?.includes(s)?'var(--b)':'var(--bs)'),boxShadow:s===rfqDoc.status?'0 0 0 4px rgba(124,58,237,.15)':'none'}">
+                    <span :style="{opacity:s===rfqDoc.status?1:.7}">{{rfqWfSymbol(s)}}</span>
+                  </div>
+                </div>
+                <div class="rfq-wf-label" :style="{fontWeight:s===rfqDoc.status?800:500,color:s===rfqDoc.status?rfqStatusCfg[s]?.color:rfqIsCompleted(s)?'var(--tm)':'var(--td)'}">{{rfqStatusCfg[s]?.label}}</div>
+              </div>
+            </div>
+          </div>
+          <div v-if="rfqTransitions[rfqDoc.status]?.includes('Closed')||rfqTransitions[rfqDoc.status]?.includes('Cancelled')||rfqDoc.status==='Closed'||rfqDoc.status==='Cancelled'" class="rfq-wf-terminal">
+            <span style="font-size:10px;color:var(--td);display:flex;align-items:center">Terminal:</span>
+            <template v-for="ts in ['Closed','Cancelled']" :key="ts">
+              <button v-if="rfqTransitions[rfqDoc.status]?.includes(ts)||rfqDoc.status===ts" style="display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;padding:3px 10px;border-radius:5px;cursor:pointer;font-family:inherit" :style="{border:'1px solid '+(rfqDoc.status===ts?rfqStatusCfg[ts].color:'var(--bs)'),background:rfqDoc.status===ts?rfqStatusCfg[ts].bg:'none',color:rfqDoc.status===ts?rfqStatusCfg[ts].color:'var(--td)'}" @click="rfqTransitions[rfqDoc.status]?.includes(ts)&&(rfqModal={status:ts})">{{rfqStatusCfg[ts]?.label}}</button>
+            </template>
+          </div>
+        </div>
+      </div>
+      <!-- Stat strip -->
+      <div v-if="rfqView!=='new'" class="rfq-stat-strip" style="margin:0 20px;border-radius:8px;margin-bottom:8px">
+        <div class="rfq-stat-item"><div style="font-size:18px;font-weight:900;color:var(--t)">{{rfqDoc.quote_count||0}}</div><div style="font-size:9px;color:var(--td);text-transform:uppercase;letter-spacing:.05em;margin-top:1px">Teklif</div></div>
+        <div class="rfq-stat-item"><div style="font-size:18px;font-weight:900;color:var(--t)">{{rfqDoc.current_views||0}}</div><div style="font-size:9px;color:var(--td);text-transform:uppercase;letter-spacing:.05em;margin-top:1px">Goruntuleme</div></div>
+        <div v-if="rfqDoc.is_view_limited" class="rfq-stat-item"><div style="font-size:18px;font-weight:900" :style="{color:rfqViewPct>=90?'#ef4444':'var(--t)'}">{{rfqViewPct}}%</div><div style="font-size:9px;color:var(--td);text-transform:uppercase;letter-spacing:.05em;margin-top:1px">Limit</div></div>
+        <div class="rfq-stat-item"><div style="font-size:18px;font-weight:900;color:var(--t)">{{rfqDoc.target_type||'&mdash;'}}</div><div style="font-size:9px;color:var(--td);text-transform:uppercase;letter-spacing:.05em;margin-top:1px">Hedef</div></div>
+        <div v-if="rfqDoc.requires_nda" class="rfq-stat-item"><div style="font-size:10px;font-weight:900;color:#f59e0b;background:rgba(245,158,11,.12);padding:2px 6px;border-radius:3px">NDA</div><div style="font-size:9px;color:var(--td);text-transform:uppercase;letter-spacing:.05em;margin-top:1px">Zorunlu</div></div>
+      </div>
+      <!-- Tabs -->
+      <div class="rfq-tabs" style="margin:0 20px;border-radius:8px 8px 0 0">
+        <button v-for="t in rfqTabs" :key="t.key" class="rfq-tab" :class="{active:rfqTab===t.key}" @click="rfqTab=t.key"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14" style="flex-shrink:0"><template v-if="t.key==='details'"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></template><template v-else-if="t.key==='items'"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></template><template v-else-if="t.key==='requirements'"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></template><template v-else-if="t.key==='documents'"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></template><template v-else-if="t.key==='outcome'"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></template></svg> {{t.label}}<span v-if="t.badge" class="rtb" :style="{background:rfqTab===t.key?'rgba(124,58,237,.1)':'var(--so)',color:rfqTab===t.key?'var(--p)':'var(--td)'}">{{t.badge}}</span></button>
+      </div>
+      <!-- Tab content -->
+      <div style="flex:1;overflow-y:auto;padding:12px 20px 20px">
+        <!-- DETAILS TAB -->
+        <template v-if="rfqTab==='details'">
+          <div class="rfq-sec" style="animation-delay:.02s"><div class="rfq-sec-head"><span>Temel Bilgiler</span></div>
+            <div class="rfq-grid">
+              <div class="rfq-field"><label>Baslik <span style="color:var(--ar)">*</span></label><input class="fi" v-model="rfqDoc.title" :disabled="!rfqCanEdit" placeholder="Teklif talebi basligi" @input="rfqDirty=true"/><div v-if="rfqErrors.title" style="font-size:10px;color:var(--ar)">{{rfqErrors.title}}</div></div>
+              <div class="rfq-field"><label>RFQ Kodu</label><input class="fi" :value="rfqDoc.rfq_code" readonly placeholder="Otomatik uretilir"/></div>
+              <div class="rfq-field"><label>Alici <span style="color:var(--ar)">*</span></label><input class="fi" v-model="rfqDoc.buyer" :disabled="!rfqCanEdit" placeholder="Alici profili secin" @input="rfqOnBuyerChange"/><div v-if="rfqErrors.buyer" style="font-size:10px;color:var(--ar)">{{rfqErrors.buyer}}</div></div>
+              <div class="rfq-field"><label>Kategori</label><input class="fi" v-model="rfqDoc.category" :disabled="!rfqCanEdit" placeholder="Kategori" @input="rfqDirty=true"/></div>
+            </div>
+            <div class="rfq-grid" style="margin-top:12px;background:var(--so);border:1px solid var(--bs);border-radius:7px;padding:12px">
+              <div style="grid-column:1/-1;font-size:10px;color:var(--td);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Alici Bilgileri (fetch_from: buyer)</div>
+              <div class="rfq-field"><label>Alici Adi</label><input class="fi" :value="rfqDoc.buyer_name" readonly/></div>
+              <div class="rfq-field"><label>Sirket</label><input class="fi" :value="rfqDoc.buyer_company" readonly/></div>
+              <div class="rfq-field"><label>E-posta</label><input class="fi" :value="rfqDoc.buyer_email" readonly/></div>
+            </div>
+            <div class="rfq-grid" style="margin-top:12px">
+              <div class="rfq-field"><label>Para Birimi</label><select class="fi" v-model="rfqDoc.currency" :disabled="!rfqCanEdit" @change="rfqDirty=true"><option v-for="c in ['TRY','USD','EUR','GBP']" :key="c" :value="c">{{c}}</option></select></div>
+              <div class="rfq-field"><label>Durum</label><span class="rfq-badge" :style="{background:rfqStatusCfg[rfqDoc.status]?.bg,color:rfqStatusCfg[rfqDoc.status]?.color}"><span class="bdot" :style="{background:rfqStatusCfg[rfqDoc.status]?.dot}"></span>{{rfqStatusCfg[rfqDoc.status]?.label}}</span></div>
+            </div>
+          </div>
+          <div class="rfq-sec" style="animation-delay:.06s"><div class="rfq-sec-head"><span>Aciklama</span></div>
+            <div class="rfq-field"><label>Aciklama</label><textarea class="fi" style="min-height:100px" v-model="rfqDoc.description" :disabled="!rfqCanEdit" placeholder="Teklif talebini detayli aciklayin..." @input="rfqDirty=true"></textarea></div>
+          </div>
+          <div class="rfq-sec" style="animation-delay:.1s"><div class="rfq-sec-head"><span>Goruntuleme Limiti</span></div>
+            <div style="margin-bottom:12px"><label class="rfq-toggle-wrap" @click="rfqCanEdit&&(rfqDoc.is_view_limited=rfqDoc.is_view_limited?0:1,rfqDoc.is_view_limited||(rfqDoc.max_views=0,rfqDoc.views_remaining=0),rfqDirty=true)"><span class="rfq-toggle" :style="{background:rfqDoc.is_view_limited?'var(--p)':'var(--bs)'}"><span class="knob" :style="{left:rfqDoc.is_view_limited?'18px':'2px'}"></span></span><span style="font-size:13px;color:var(--tm);font-weight:500">Goruntuleme Limiti Aktif</span></label></div>
+            <template v-if="rfqDoc.is_view_limited">
+              <div class="rfq-grid">
+                <div class="rfq-field"><label>Maksimum Goruntuleme <span style="color:var(--ar)">*</span></label><input class="fi" type="number" min="1" v-model="rfqDoc.max_views" :disabled="!rfqCanEdit" @input="rfqDirty=true"/></div>
+                <div class="rfq-field"><label>Mevcut Goruntuleme</label><input class="fi" :value="rfqDoc.current_views" readonly/></div>
+              </div>
+              <div v-if="rfqDoc.max_views>0" style="margin-top:12px">
+                <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--tm);margin-bottom:5px"><span>Limit Kullanimi</span><span style="font-weight:700" :style="{color:rfqViewPct>=90?'#ef4444':rfqViewPct>=70?'#f59e0b':'#10b981'}">{{rfqViewPct}}%</span></div>
+                <div class="rfq-pbar"><div class="rfq-pbar-fill" :style="{width:rfqViewPct+'%',background:rfqViewPct>=90?'#ef4444':rfqViewPct>=70?'#f59e0b':'var(--p)'}"></div></div>
+              </div>
+            </template>
+          </div>
+        </template>
+        <!-- ITEMS TAB -->
+        <template v-if="rfqTab==='items'">
+          <div class="rfq-sec" style="animation-delay:.02s"><div class="rfq-sec-head"><span>Talep Edilen Urunler (RFQ Item)</span><button v-if="rfqCanEdit" class="btn" style="padding:4px 10px;font-size:11px" @click="rfqAddItem">+ Urun Ekle</button></div>
+            <div style="display:flex;gap:16px;margin-bottom:12px">
+              <label class="rfq-toggle-wrap" @click="rfqCanEdit&&(rfqDoc.require_all_items=rfqDoc.require_all_items?0:1,rfqDoc.require_all_items&&(rfqDoc.allow_partial_quotes=0),rfqDirty=true)"><span class="rfq-toggle" :style="{background:rfqDoc.require_all_items?'var(--p)':'var(--bs)'}"><span class="knob" :style="{left:rfqDoc.require_all_items?'18px':'2px'}"></span></span><span style="font-size:13px;color:var(--tm);font-weight:500">Tum urunler zorunlu</span></label>
+              <label class="rfq-toggle-wrap" @click="rfqCanEdit&&(rfqDoc.allow_partial_quotes=rfqDoc.allow_partial_quotes?0:1,rfqDoc.allow_partial_quotes&&(rfqDoc.require_all_items=0),rfqDirty=true)"><span class="rfq-toggle" :style="{background:rfqDoc.allow_partial_quotes?'var(--p)':'var(--bs)'}"><span class="knob" :style="{left:rfqDoc.allow_partial_quotes?'18px':'2px'}"></span></span><span style="font-size:13px;color:var(--tm);font-weight:500">Kismi teklif kabul</span></label>
+            </div>
+            <div style="overflow-x:auto">
+              <table class="rfq-child-tbl">
+                <thead><tr><th>#</th><th>Listeleme</th><th>Urun Adi</th><th>Kategori</th><th>Miktar</th><th>Birim</th><th>Hedef Fiyat</th><th>Para Birimi</th><th></th></tr></thead>
+                <tbody>
+                  <tr v-if="!rfqDoc.items||rfqDoc.items.length===0"><td colspan="9" style="text-align:center;padding:32px;color:var(--td);font-size:13px">Henuz urun eklenmedi</td></tr>
+                  <tr v-for="(item,i) in rfqDoc.items" :key="i">
+                    <td style="padding:8px 10px;color:var(--td);font-weight:700;font-size:11px">{{i+1}}</td>
+                    <td style="min-width:110px"><input class="fi" style="padding:4px 6px;font-size:11px" v-model="item.listing" :disabled="!rfqCanEdit" placeholder="L-001" @input="rfqDirty=true"/></td>
+                    <td style="min-width:130px"><input class="fi" style="padding:4px 6px;font-size:11px" v-model="item.item_name" :disabled="!rfqCanEdit" placeholder="Urun adi" @input="rfqDirty=true"/></td>
+                    <td style="min-width:100px"><input class="fi" style="padding:4px 6px;font-size:11px" v-model="item.category" :disabled="!rfqCanEdit" placeholder="Kategori" @input="rfqDirty=true"/></td>
+                    <td style="width:80px"><input class="fi" style="padding:4px 6px;font-size:11px" type="number" min="1" v-model="item.qty" :disabled="!rfqCanEdit" @input="rfqDirty=true"/></td>
+                    <td style="width:80px"><input class="fi" style="padding:4px 6px;font-size:11px" v-model="item.uom" :disabled="!rfqCanEdit" placeholder="Adet" @input="rfqDirty=true"/></td>
+                    <td style="width:110px"><input class="fi" style="padding:4px 6px;font-size:11px" type="number" v-model="item.target_price" :disabled="!rfqCanEdit" @input="rfqDirty=true"/></td>
+                    <td style="width:70px"><input class="fi" style="padding:4px 6px;font-size:11px" v-model="item.currency" :disabled="!rfqCanEdit" placeholder="TRY" @input="rfqDirty=true"/></td>
+                    <td><button v-if="rfqCanEdit" style="background:none;border:none;color:var(--ar);cursor:pointer;font-size:14px;padding:2px 5px" @click="rfqDoc.items.splice(i,1);rfqDirty=true">&#10005;</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="rfq-sec" style="animation-delay:.06s"><div class="rfq-sec-head"><span>Satici Hedefleme</span></div>
+            <div class="rfq-field" style="margin-bottom:12px"><label>Hedef Tipi</label>
+              <div style="display:flex;gap:10px">
+                <div v-for="[v,l] in [['Public','Herkese Acik'],['Category','Kategoriye Ozel'],['Selected','Secili Saticilar']]" :key="v" class="rfq-target-card" :class="{sel:rfqDoc.target_type===v}" @click="rfqCanEdit&&(rfqDoc.target_type=v,rfqDirty=true)">
+                  <div style="margin-bottom:4px"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="22" height="22"><template v-if="v==='Public'"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></template><template v-else-if="v==='Category'"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></template><template v-else><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></template></svg></div>
+                  <div style="font-size:12px;font-weight:700" :style="{color:rfqDoc.target_type===v?'var(--p)':'var(--tm)'}">{{l}}</div>
+                </div>
+              </div>
+            </div>
+            <template v-if="rfqDoc.target_type==='Selected'">
+              <div class="rfq-sec-head"><span>Hedef Saticilar</span><button v-if="rfqCanEdit" class="btn" style="padding:4px 10px;font-size:11px" @click="rfqDoc.target_sellers.push({seller:''});rfqDirty=true">+ Satici Ekle</button></div>
+              <div v-for="(s,i) in rfqDoc.target_sellers" :key="i" style="display:flex;gap:8px;margin-bottom:8px">
+                <input class="fi" v-model="s.seller" :disabled="!rfqCanEdit" placeholder="Satici ID" @input="rfqDirty=true"/>
+                <button v-if="rfqCanEdit" style="background:none;border:none;color:var(--ar);cursor:pointer;font-size:14px" @click="rfqDoc.target_sellers.splice(i,1);rfqDirty=true">&#10005;</button>
+              </div>
+            </template>
+            <template v-if="rfqDoc.target_type==='Category'">
+              <div class="rfq-sec-head"><span>Hedef Kategoriler</span><button v-if="rfqCanEdit" class="btn" style="padding:4px 10px;font-size:11px" @click="rfqDoc.target_categories.push({category:''});rfqDirty=true">+ Kategori Ekle</button></div>
+              <div v-for="(c,i) in rfqDoc.target_categories" :key="i" style="display:flex;gap:8px;margin-bottom:8px">
+                <input class="fi" v-model="c.category" :disabled="!rfqCanEdit" placeholder="Kategori" @input="rfqDirty=true"/>
+                <button v-if="rfqCanEdit" style="background:none;border:none;color:var(--ar);cursor:pointer;font-size:14px" @click="rfqDoc.target_categories.splice(i,1);rfqDirty=true">&#10005;</button>
+              </div>
+            </template>
+          </div>
+        </template>
+        <!-- REQUIREMENTS TAB -->
+        <template v-if="rfqTab==='requirements'">
+          <div class="rfq-sec" style="animation-delay:.02s"><div class="rfq-sec-head"><span>Gereksinimler</span></div>
+            <div class="rfq-grid">
+              <div class="rfq-field"><label>Teklif Son Tarihi</label><input class="fi" type="datetime-local" v-model="rfqDoc.deadline" :disabled="!rfqCanEdit" @input="rfqDirty=true"/></div>
+              <div class="rfq-field"><label>Son Basvuru Tarihi</label><input class="fi" type="datetime-local" v-model="rfqDoc.submission_deadline" :disabled="!rfqCanEdit" @input="rfqDirty=true"/></div>
+              <div class="rfq-field"><label>Toplam Miktar</label><input class="fi" type="number" min="0" v-model="rfqDoc.quantity" :disabled="!rfqCanEdit" @input="rfqDirty=true"/></div>
+              <div class="rfq-field"><label>Birim</label><select class="fi" v-model="rfqDoc.unit" :disabled="!rfqCanEdit" @change="rfqDirty=true"><option value="">Secin...</option><option v-for="u in ['Adet','kg','lt','m','m2']" :key="u" :value="u">{{u}}</option></select></div>
+              <div class="rfq-field"><label>Minimum Butce</label><input class="fi" type="number" min="0" v-model="rfqDoc.budget_min" :disabled="!rfqCanEdit" placeholder="0" @input="rfqDirty=true"/></div>
+              <div class="rfq-field"><label>Maksimum Butce</label><input class="fi" type="number" min="0" v-model="rfqDoc.budget_max" :disabled="!rfqCanEdit" placeholder="0" @input="rfqDirty=true"/></div>
+            </div>
+          </div>
+          <div class="rfq-sec" style="animation-delay:.06s"><div class="rfq-sec-head"><span>Teslimat</span></div>
+            <div class="rfq-grid">
+              <div class="rfq-field"><label>Beklenen Teslimat Tarihi</label><input class="fi" type="date" v-model="rfqDoc.delivery_date" :disabled="!rfqCanEdit" @input="rfqDirty=true"/></div>
+              <div class="rfq-field"><label>Teslimat Yeri</label><input class="fi" v-model="rfqDoc.delivery_location" :disabled="!rfqCanEdit" placeholder="Sehir veya adres" @input="rfqDirty=true"/></div>
+            </div>
+          </div>
+        </template>
+        <!-- DOCUMENTS TAB -->
+        <template v-if="rfqTab==='documents'">
+          <div class="rfq-sec" style="animation-delay:.02s"><div class="rfq-sec-head"><span>NDA Gereksinimleri</span></div>
+            <div style="padding:14px;border-radius:8px;margin-bottom:14px;transition:all .15s" :style="{border:'1.5px solid '+(rfqDoc.requires_nda?'var(--p)':'var(--bs)'),background:rfqDoc.requires_nda?'rgba(124,58,237,.06)':'var(--so)'}">
+              <label class="rfq-toggle-wrap" @click="rfqCanEdit&&(rfqDoc.requires_nda=rfqDoc.requires_nda?0:1,rfqDirty=true)"><span class="rfq-toggle" :style="{background:rfqDoc.requires_nda?'var(--p)':'var(--bs)'}"><span class="knob" :style="{left:rfqDoc.requires_nda?'18px':'2px'}"></span></span><span style="font-size:13px;color:var(--tm);font-weight:500">NDA Zorunlu</span></label>
+            </div>
+            <template v-if="rfqDoc.requires_nda">
+              <div class="rfq-field"><label>NDA Sablonu <span style="color:var(--ar)">*</span></label><input class="fi" v-model="rfqDoc.nda_template" :disabled="!rfqCanEdit" placeholder="Contract Template secin" @input="rfqDirty=true"/><div v-if="rfqErrors.nda_template" style="font-size:10px;color:var(--ar)">{{rfqErrors.nda_template}}</div></div>
+            </template>
+          </div>
+          <div class="rfq-sec" style="animation-delay:.06s"><div class="rfq-sec-head"><span>Ekler (RFQ Attachment)</span><button v-if="rfqCanEdit" class="btn" style="padding:4px 10px;font-size:11px" @click="rfqDoc.attachments.push({file_name:'',file_url:'',description:''});rfqDirty=true">+ Ek Ekle</button></div>
+            <div v-if="!rfqDoc.attachments||rfqDoc.attachments.length===0" style="text-align:center;padding:24px;color:var(--td);font-size:13px">Ek bulunamadi</div>
+            <div v-for="(a,i) in rfqDoc.attachments" :key="i" style="display:flex;gap:8px;margin-bottom:8px;align-items:center">
+              <input class="fi" v-model="a.file_name" :disabled="!rfqCanEdit" placeholder="Dosya adi" @input="rfqDirty=true"/>
+              <input class="fi" v-model="a.file_url" :disabled="!rfqCanEdit" placeholder="URL" @input="rfqDirty=true"/>
+              <input class="fi" v-model="a.description" :disabled="!rfqCanEdit" placeholder="Aciklama" @input="rfqDirty=true"/>
+              <button v-if="rfqCanEdit" style="background:none;border:none;color:var(--ar);cursor:pointer;font-size:14px;flex-shrink:0" @click="rfqDoc.attachments.splice(i,1);rfqDirty=true">&#10005;</button>
+            </div>
+          </div>
+        </template>
+        <!-- OUTCOME TAB -->
+        <template v-if="rfqTab==='outcome'">
+          <div v-if="['Accepted','Ordered','Closed','Cancelled'].includes(rfqDoc.status)" class="rfq-sec" style="animation-delay:.02s"><div class="rfq-sec-head"><span>Sonuc</span></div>
+            <div class="rfq-grid">
+              <div class="rfq-field"><label>Kabul Edilen Teklif</label><input class="fi" v-model="rfqDoc.accepted_quote" :disabled="!rfqCanEdit" placeholder="QUOTE-2026-..." @input="rfqDirty=true"/></div>
+              <div class="rfq-field"><label>Kapatilma Tarihi</label><input class="fi" :value="rfqDoc.closed_at?new Date(rfqDoc.closed_at).toLocaleString('tr-TR'):''" readonly/></div>
+            </div>
+            <div class="rfq-field" style="margin-top:12px"><label>Kapatma Nedeni</label><input class="fi" v-model="rfqDoc.closed_reason" :disabled="rfqDoc.status==='Closed'||rfqDoc.status==='Cancelled'" placeholder="Kapatma nedeni" @input="rfqDirty=true"/></div>
+          </div>
+          <div v-else style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:60px 20px;background:var(--sr);border:1px solid var(--bs);border-radius:10px;text-align:center">
+            <span style="font-size:48px">&#9203;</span>
+            <h3 style="margin:0;font-size:16px;font-weight:800;color:var(--tm)">Henuz Sonuclanmadi</h3>
+            <p style="margin:0;font-size:13px;color:var(--td)">RFQ kabul edildiginde veya kapatildiginda sonuc gorunecek.</p>
+            <div v-if="rfqDoc.quote_count>0" style="display:inline-flex;align-items:center;gap:8px;background:rgba(124,58,237,.06);border:1px solid rgba(124,58,237,.3);border-radius:999px;padding:6px 18px;font-size:13px;color:var(--p);font-weight:700"><strong style="font-size:20px">{{rfqDoc.quote_count}}</strong> teklif alindi</div>
+          </div>
+        </template>
+        <!-- Actions -->
+        <div v-if="rfqView!=='new'&&rfqTransitions[rfqDoc.status]?.length>0" class="rfq-sec" style="animation-delay:.2s"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--td);margin-bottom:12px">Islemler</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button v-for="ts in rfqTransitions[rfqDoc.status]" :key="ts" class="btn" :class="{'danger':ts==='Cancelled','pri':ts!=='Cancelled'&&ts!=='Closed'}" @click="rfqModal={status:ts}">{{rfqStatusCfg[ts]?.label}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- EMPTY -->
     <div class="es" v-else><div class="es-i"><span v-html="activeRailIcon"></span></div><h2>{{activeRailLabel}}</h2><p>Bu modül henüz yapılandırılmadı.</p><div class="es-t"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Geliştirme aşamasında</div></div>
     <!-- DELETE MODAL -->
@@ -343,6 +656,24 @@
         <div class="modal-actions">
           <button class="btn" @click="showDeleteModal=false">İptal</button>
           <button class="btn danger" @click="confirmDelete"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Evet, Sil</button>
+        </div>
+      </div>
+    </div>
+    <!-- RFQ Transition Modal -->
+    <div v-if="rfqModal" class="modal-overlay" @click.self="rfqModal=null">
+      <div class="modal-box">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+          <span style="font-size:11px;font-weight:800;padding:3px 9px;border-radius:4px" :style="{background:rfqStatusCfg[rfqModal.status]?.bg,color:rfqStatusCfg[rfqModal.status]?.color}">{{rfqStatusCfg[rfqModal.status]?.label}}</span>
+          <h3 style="margin:0;font-size:15px;font-weight:800">{{rfqModal.status==='Published'?'RFQ\'yu Yayinla':rfqModal.status==='Closed'?'RFQ\'yu Kapat':rfqModal.status==='Cancelled'?'RFQ\'yu Iptal Et':'Durumu Guncelle'}}</h3>
+        </div>
+        <p style="margin:0 0 16px;font-size:13px;color:var(--tm);line-height:1.6">{{rfqModal.status==='Published'?'Saticilar bu RFQ\'yu gorup teklif verebilecek.':rfqModal.status==='Closed'?'Bu islem geri alinamaz. Tum teklifler dondurulacak.':rfqModal.status==='Cancelled'?'RFQ iptal edilecek ve saticilar bilgilendirilecek.':'Durum guncellenecek.'}}</p>
+        <div v-if="rfqModal.status==='Closed'||rfqModal.status==='Cancelled'" style="margin-bottom:16px">
+          <label style="font-size:11px;font-weight:700;color:var(--td);text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:5px">Neden (opsiyonel)</label>
+          <input class="fi" v-model="rfqModalReason" placeholder="Aciklama girin..."/>
+        </div>
+        <div style="display:flex;justify-content:flex-end;gap:8px">
+          <button class="btn" @click="rfqModal=null">Iptal</button>
+          <button class="btn pri" @click="rfqDoTransition(rfqModal.status,rfqModalReason);rfqModal=null;rfqModalReason=''">Onayla</button>
         </div>
       </div>
     </div>
@@ -433,7 +764,7 @@ const paginatedRecords=computed(()=>{const s=(currentPage.value-1)*pageSize;retu
 const viewModes=[{id:'grid',icon:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>'},{id:'list',icon:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>'},{id:'kanban',icon:'<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="5" height="18" rx="1"/><rect x="10" y="3" width="5" height="12" rx="1"/><rect x="17" y="3" width="5" height="15" rx="1"/></svg>'}];
 const activeRailLabel=computed(()=>{const i=railItems.find(r=>r.id===activeRail.value);return i?i.label:'';});
 const activeRailIcon=computed(()=>{const i=railItems.find(r=>r.id===activeRail.value);return i?i.icon:'';});
-function switchRail(id){activeRail.value=id;if(id==='products')sidebarCollapsed.value=false;currentView.value='list';}
+function switchRail(id){activeRail.value=id;if(id==='products'||id==='sales')sidebarCollapsed.value=false;currentView.value='list';if(id==='sales')rfqView.value='list';}
 function toggleGroup(t){openGroups[t]=!openGroups[t];}
 function selectLink(link){activeLink.value=link.label;records.value=loadRecords();currentPage.value=1;searchQuery.value='';currentView.value='list';activeTab.value=0;isNewRecord.value=false;}
 function openDetail(r){selectedRecord.value=r;isNewRecord.value=false;currentView.value='detail';activeTab.value=0;const dt=currentDoctype.value;const cached=loadFromCache(dt);const saved=cached.find(c=>c._id===r.id);initFormData(currentSchema.value,saved||null);}
@@ -442,7 +773,74 @@ function cycleStatusFilter(){const o=['all','draft','active','cancelled'];status
 function cycleSortOrder(){sortOrder.value=sortOrder.value==='desc'?'asc':'desc';}
 function toggleSelectAll(){paginatedRecords.value.forEach(r=>r.selected=selectAll.value);}
 function refreshData(){records.value=loadRecords();currentPage.value=1;}
-return{sidebarCollapsed,activeRail,activeLink,viewMode,searchQuery,statusFilter,sortOrder,currentPage,pageSize,selectAll,currentView,selectedRecord,activityOpen,openGroups,railItems,sidebarGroups,records,filteredRecords,totalPages,visiblePages,paginatedRecords,viewModes,activeRailLabel,activeRailIcon,currentDoctype,formSections,activeTab,activityLogs,formData,isNewRecord,toast,fileInputRefs,fileNames,fileSizes,dragField,isDark,kanbanColumns,showDeleteModal,isMediaDoctype,switchRail,toggleGroup,selectLink,openDetail,getLinkIcon,cycleStatusFilter,cycleSortOrder,toggleSelectAll,refreshData,getChildCols,switchTab,createNew,saveRecord,deleteRecord,confirmDelete,addChildRow,goBackToList,triggerFileInput,handleFileSelect,handleDrop,removeFile,toggleTheme,getMimeClass,getMimeLabel,getMockMime};}}).mount('#app');
+/* ═══════ RFQ MODULE ═══════ */
+const rfqStatusCfg={
+  Draft:{label:'Taslak',color:'#9998b0',bg:'rgba(255,255,255,.06)',dot:'#6b6b80',order:0},
+  Published:{label:'Yayinlandi',color:'#4f8ef7',bg:'rgba(79,142,247,.12)',dot:'#4f8ef7',order:1},
+  Quoting:{label:'Teklif Aliniyor',color:'#f59e0b',bg:'rgba(245,158,11,.12)',dot:'#f59e0b',order:2},
+  Negotiation:{label:'Muzakere',color:'#7c3aed',bg:'rgba(124,58,237,.12)',dot:'#7c3aed',order:3},
+  Accepted:{label:'Kabul Edildi',color:'#10b981',bg:'rgba(16,185,129,.12)',dot:'#10b981',order:4},
+  Ordered:{label:'Siparis Verildi',color:'#14b8a6',bg:'rgba(20,184,166,.12)',dot:'#14b8a6',order:5},
+  Closed:{label:'Kapatildi',color:'#55546a',bg:'rgba(255,255,255,.04)',dot:'#44445a',order:6},
+  Cancelled:{label:'Iptal Edildi',color:'#ef4444',bg:'rgba(239,68,68,.12)',dot:'#ef4444',order:7}
+};
+const rfqTransitions={Draft:['Published','Cancelled'],Published:['Quoting','Negotiation','Closed','Cancelled'],Quoting:['Negotiation','Closed','Cancelled'],Negotiation:['Accepted','Closed','Cancelled'],Accepted:['Ordered','Closed'],Ordered:['Closed'],Closed:[],Cancelled:[]};
+const rfqFlowSteps=['Draft','Published','Quoting','Negotiation','Accepted','Ordered'];
+const rfqMockList=[
+  {name:'RFQ-2026-00001',rfq_code:'RFQ-20260101-A4K2',title:'Endustriyel Rulman Seti Talebi',buyer:'buyer-001',buyer_name:'Mehmet Yilmaz',buyer_company:'Yilmaz Makine A.S.',buyer_email:'m.yilmaz@yilmazmakine.com',status:'Quoting',category:'Endustriyel Ekipman',target_type:'Public',deadline:'2026-03-15T18:00',quote_count:4,requires_nda:0,is_view_limited:1,current_views:18,max_views:25,tenant:'tenant-ist',tenant_name:'Istanbul Sanayi',budget_min:50000,budget_max:120000,created_date:'2026-01-15',description:'Yuksek devirli sanzımanlar icin endustriyel rulman seti.',items:[{listing:'L-001',item_name:'Rulman 6204-2RS',category:'Rulman',qty:100,uom:'Adet',target_price:45,currency:'TRY'},{listing:'L-002',item_name:'Rulman 6306-ZZ',category:'Rulman',qty:50,uom:'Adet',target_price:85,currency:'TRY'}],target_sellers:[],target_categories:[],quantity:150,unit:'Adet',delivery_date:'2026-04-01',delivery_location:'Istanbul, Turkiye',require_all_items:1,allow_partial_quotes:0,submission_deadline:'2026-03-10T23:59',accepted_quote:'',closed_at:'',closed_reason:'',published_at:'2026-01-16T09:30',attachments:[],currency:'TRY',nda_template:'',organization:'',tenant_name_full:''},
+  {name:'RFQ-2026-00002',rfq_code:'RFQ-20260120-B7X9',title:'Ofis Mobilyasi Toplu Alim',buyer:'buyer-002',buyer_name:'Ayse Kara',buyer_company:'Kara Holding',buyer_email:'a.kara@karaholding.com',status:'Draft',category:'Mobilya',target_type:'Category',deadline:'2026-04-01T17:00',quote_count:0,requires_nda:0,is_view_limited:0,current_views:0,max_views:0,tenant:'tenant-ank',tenant_name:'Ankara Is',budget_min:200000,budget_max:500000,created_date:'2026-01-20',description:'Yeni ofis binasi icin 200 kisilik calisma alani mobilyasi.',items:[{listing:'L-010',item_name:'Ergonomik Ofis Koltugu',category:'Mobilya',qty:200,uom:'Adet',target_price:1800,currency:'TRY'}],target_sellers:[],target_categories:[{category:'Mobilya'},{category:'Ofis Urunleri'}],quantity:200,unit:'Adet',delivery_date:'2026-05-15',delivery_location:'Ankara',require_all_items:0,allow_partial_quotes:1,submission_deadline:'2026-03-25T23:59',accepted_quote:'',closed_at:'',closed_reason:'',published_at:'',attachments:[],currency:'TRY',nda_template:'',organization:'',tenant_name_full:''},
+  {name:'RFQ-2026-00003',rfq_code:'RFQ-20260205-C1M4',title:'Kimyasal Ham Madde Tedariki',buyer:'buyer-003',buyer_name:'Ali Demir',buyer_company:'Demir Kimya Ltd.',buyer_email:'a.demir@demirkimya.com',status:'Negotiation',category:'Kimyasal Urunler',target_type:'Selected',deadline:'2026-03-08T12:00',quote_count:7,requires_nda:1,is_view_limited:1,current_views:5,max_views:5,tenant:'tenant-izm',tenant_name:'Izmir Kimya',budget_min:800000,budget_max:1500000,created_date:'2026-02-05',description:'Boya uretimi icin baz kimyasallar.',items:[{listing:'L-020',item_name:'Titanyum Dioksit',category:'Pigment',qty:5000,uom:'kg',target_price:120,currency:'TRY'},{listing:'L-021',item_name:'Akrilik Recine',category:'Recine',qty:2000,uom:'kg',target_price:85,currency:'TRY'},{listing:'L-022',item_name:'Solvent Karisimi',category:'Solvent',qty:3000,uom:'lt',target_price:45,currency:'TRY'}],target_sellers:[{seller:'Seller-A'},{seller:'Seller-B'}],target_categories:[],quantity:10000,unit:'kg',delivery_date:'2026-04-30',delivery_location:'Izmir OSB',require_all_items:1,allow_partial_quotes:0,submission_deadline:'2026-03-05T23:59',accepted_quote:'',closed_at:'',closed_reason:'',published_at:'2026-02-06T08:00',attachments:[],currency:'TRY',nda_template:'NDA-Kimya-001',organization:'',tenant_name_full:''},
+  {name:'RFQ-2026-00004',rfq_code:'RFQ-20260210-D9P3',title:'IT Ekipman Yenileme Projesi',buyer:'buyer-004',buyer_name:'Fatma Sahin',buyer_company:'Sahin Teknoloji',buyer_email:'f.sahin@sahintekno.com',status:'Accepted',category:'Bilisim',target_type:'Public',deadline:'2026-02-28T17:00',quote_count:11,requires_nda:0,is_view_limited:0,current_views:43,max_views:0,tenant:'tenant-ist',tenant_name:'Istanbul Sanayi',budget_min:1200000,budget_max:2000000,created_date:'2026-02-10',description:'150 calisan icin laptop, monitor ve cevre birimi.',items:[{listing:'L-030',item_name:'Laptop i7 13th Gen',category:'Bilgisayar',qty:150,uom:'Adet',target_price:28000,currency:'TRY'},{listing:'L-031',item_name:'27" 4K Monitor',category:'Monitor',qty:150,uom:'Adet',target_price:12000,currency:'TRY'}],target_sellers:[],target_categories:[],quantity:300,unit:'Adet',delivery_date:'2026-03-31',delivery_location:'Istanbul Kucukcekmece',require_all_items:1,allow_partial_quotes:0,submission_deadline:'2026-02-25T23:59',accepted_quote:'QUOTE-2026-00089',closed_at:'',closed_reason:'',published_at:'2026-02-11T10:00',attachments:[],currency:'TRY',nda_template:'',organization:'',tenant_name_full:''},
+  {name:'RFQ-2026-00005',rfq_code:'RFQ-20260215-E5N7',title:'Ambalaj Malzemesi Alimi',buyer:'buyer-001',buyer_name:'Mehmet Yilmaz',buyer_company:'Yilmaz Makine A.S.',buyer_email:'m.yilmaz@yilmazmakine.com',status:'Closed',category:'Ambalaj',target_type:'Public',deadline:'2026-02-20T17:00',quote_count:3,requires_nda:0,is_view_limited:0,current_views:12,max_views:0,tenant:'tenant-ist',tenant_name:'Istanbul Sanayi',budget_min:30000,budget_max:60000,created_date:'2026-02-15',description:'Urun sevkiyati icin oluklu mukavva kutu.',items:[{listing:'L-040',item_name:'Oluklu Kutu 40x30x20',category:'Ambalaj',qty:5000,uom:'Adet',target_price:8,currency:'TRY'}],target_sellers:[],target_categories:[],quantity:5000,unit:'Adet',delivery_date:'2026-03-01',delivery_location:'Istanbul',require_all_items:0,allow_partial_quotes:0,submission_deadline:'2026-02-18T23:59',accepted_quote:'',closed_at:'2026-02-21T09:00',closed_reason:'Butce yeterli teklif alinamadi',published_at:'2026-02-16T08:30',attachments:[],currency:'TRY',nda_template:'',organization:'',tenant_name_full:''}
+];
+const rfqList=ref(JSON.parse(JSON.stringify(rfqMockList)));
+const rfqView=ref('list');
+const rfqCurrent=ref(null);
+const rfqDoc=reactive({name:'',rfq_code:'',title:'',buyer:'',buyer_name:'',buyer_company:'',buyer_email:'',status:'Draft',category:'',description:'',items:[],require_all_items:0,allow_partial_quotes:0,target_type:'Public',target_sellers:[],target_categories:[],deadline:'',submission_deadline:'',quantity:0,unit:'',budget_min:0,budget_max:0,delivery_date:'',delivery_location:'',requires_nda:0,nda_template:'',attachments:[],accepted_quote:'',closed_at:'',closed_reason:'',currency:'TRY',is_view_limited:0,max_views:0,current_views:0,views_remaining:0,quote_count:0,published_at:'',created_date:''});
+const rfqTab=ref('details');
+const rfqDirty=ref(false);
+const rfqModal=ref(null);
+const rfqModalReason=ref('');
+const rfqErrors=reactive({});
+const rfqSearch=ref('');
+const rfqStatusFilter=ref('');
+const activeSalesLink=ref('RFQ');
+const salesSidebarGroups=[
+  {title:'Teklif Talepleri',active:true,links:[{label:'RFQ'},{label:'RFQ Kalemleri'},{label:'RFQ Teklifleri'},{label:'RFQ Teklif Kalemleri'},{label:'RFQ Teklif Revizyonlari'},{label:'RFQ Mesajlari'},{label:'RFQ Ekleri'},{label:'RFQ Goruntuleme Kaydi'}]},
+  {title:'Siparisler',active:false,links:[{label:'Siparis'},{label:'Siparis Kalemleri'},{label:'Siparis Odemeleri'}]},
+  {title:'Teklifler',active:false,links:[{label:'Teklif'},{label:'Teklif Kalemleri'}]},
+  {title:'Iade Yonetimi',active:false,links:[{label:'Iade Talebi'}]}
+];
+const rfqTabs=computed(()=>[
+  {key:'details',label:'Detaylar'},
+  {key:'items',label:'Urunler',badge:rfqDoc.items?.length||null},
+  {key:'requirements',label:'Gereksinimler'},
+  {key:'documents',label:'Belgeler',badge:rfqDoc.requires_nda?'NDA':null},
+  {key:'outcome',label:'Sonuc'}
+]);
+const rfqCanEdit=computed(()=>rfqDoc.status==='Draft'||rfqView.value==='new');
+const rfqViewPct=computed(()=>rfqDoc.is_view_limited&&rfqDoc.max_views?Math.min(100,Math.round(rfqDoc.current_views/rfqDoc.max_views*100)):0);
+const rfqFiltered=computed(()=>{
+  let list=rfqList.value;
+  if(rfqStatusFilter.value)list=list.filter(r=>r.status===rfqStatusFilter.value);
+  if(rfqSearch.value){const q=rfqSearch.value.toLowerCase();list=list.filter(r=>r.title.toLowerCase().includes(q)||r.rfq_code.toLowerCase().includes(q)||r.buyer_name.toLowerCase().includes(q));}
+  return list;
+});
+const rfqStatusCounts=computed(()=>{const c={};rfqList.value.forEach(r=>{c[r.status]=(c[r.status]||0)+1;});return c;});
+function rfqDaysleft(d){if(!d)return null;return Math.ceil((new Date(d)-new Date())/864e5);}
+function rfqLoadDoc(r){Object.keys(rfqDoc).forEach(k=>{if(r.hasOwnProperty(k)){if(Array.isArray(r[k]))rfqDoc[k]=JSON.parse(JSON.stringify(r[k]));else rfqDoc[k]=r[k];}});}
+function rfqOpenDetail(r){rfqCurrent.value=r;rfqLoadDoc(r);rfqView.value='detail';rfqTab.value='details';rfqDirty.value=false;Object.keys(rfqErrors).forEach(k=>delete rfqErrors[k]);}
+function rfqCreateNew(){const newRfq={name:'',rfq_code:'',title:'',buyer:'',buyer_name:'',buyer_company:'',buyer_email:'',status:'Draft',category:'',description:'',items:[],require_all_items:0,allow_partial_quotes:0,target_type:'Public',target_sellers:[],target_categories:[],deadline:'',submission_deadline:'',quantity:0,unit:'',budget_min:0,budget_max:0,delivery_date:'',delivery_location:'',requires_nda:0,nda_template:'',attachments:[],accepted_quote:'',closed_at:'',closed_reason:'',currency:'TRY',is_view_limited:0,max_views:0,current_views:0,views_remaining:0,quote_count:0,published_at:'',created_date:''};rfqCurrent.value=null;rfqLoadDoc(newRfq);rfqView.value='new';rfqTab.value='details';rfqDirty.value=false;Object.keys(rfqErrors).forEach(k=>delete rfqErrors[k]);}
+function rfqIsCompleted(s){return rfqStatusCfg[s]?.order<rfqStatusCfg[rfqDoc.status]?.order;}
+function rfqWfSymbol(s){if(s===rfqDoc.status)return '●';if(rfqIsCompleted(s))return '✓';if(rfqTransitions[rfqDoc.status]?.includes(s))return '○';return '·';}
+function rfqGoBack(){rfqView.value='list';rfqCurrent.value=null;rfqDirty.value=false;}
+function rfqOnBuyerChange(){rfqDirty.value=true;if(rfqDoc.buyer){rfqDoc.buyer_name='Alici Adi';rfqDoc.buyer_company='Alici Sirketi';rfqDoc.buyer_email='alici@sirket.com';}else{rfqDoc.buyer_name='';rfqDoc.buyer_company='';rfqDoc.buyer_email='';}}
+function rfqAddItem(){rfqDoc.items.push({listing:'',item_name:'',category:'',qty:1,uom:'Adet',target_price:0,currency:'TRY'});rfqDirty.value=true;}
+function rfqValidate(){Object.keys(rfqErrors).forEach(k=>delete rfqErrors[k]);if(!rfqDoc.title)rfqErrors.title='Baslik zorunludur';if(!rfqDoc.buyer)rfqErrors.buyer='Alici zorunludur';if(rfqDoc.requires_nda&&!rfqDoc.nda_template)rfqErrors.nda_template='NDA sablonu zorunludur';return Object.keys(rfqErrors).length===0;}
+function rfqSave(){if(!rfqValidate())return;if(!rfqDoc.name){rfqDoc.name='RFQ-2026-'+String(Date.now()).slice(-5);rfqDoc.rfq_code='RFQ-'+new Date().toISOString().slice(0,10).replace(/-/g,'')+'-'+Math.random().toString(36).slice(2,6).toUpperCase();rfqDoc.created_date=new Date().toISOString().slice(0,10);}const saved=JSON.parse(JSON.stringify(rfqDoc));const idx=rfqList.value.findIndex(r=>r.name===saved.name);if(idx>=0)rfqList.value[idx]=saved;else rfqList.value.unshift(saved);rfqCurrent.value=saved;if(rfqView.value==='new')rfqView.value='detail';rfqDirty.value=false;showToast('Kaydedildi');}
+function rfqDoTransition(status,reason){if(status==='Published'&&!rfqDoc.deadline){showToast('Yayinlamak icin son tarih gerekli','warn');return;}rfqDoc.status=status;if(status==='Published')rfqDoc.published_at=new Date().toISOString();if(status==='Closed'||status==='Cancelled'){rfqDoc.closed_at=new Date().toISOString();rfqDoc.closed_reason=reason||'';}const saved=JSON.parse(JSON.stringify(rfqDoc));const idx=rfqList.value.findIndex(r=>r.name===saved.name);if(idx>=0)rfqList.value[idx]=saved;rfqCurrent.value=saved;showToast('Durum: '+rfqStatusCfg[status]?.label);}
+function selectSalesLink(label){activeSalesLink.value=label;rfqView.value='list';}
+return{sidebarCollapsed,activeRail,activeLink,viewMode,searchQuery,statusFilter,sortOrder,currentPage,pageSize,selectAll,currentView,selectedRecord,activityOpen,openGroups,railItems,sidebarGroups,records,filteredRecords,totalPages,visiblePages,paginatedRecords,viewModes,activeRailLabel,activeRailIcon,currentDoctype,formSections,activeTab,activityLogs,formData,isNewRecord,toast,fileInputRefs,fileNames,fileSizes,dragField,isDark,kanbanColumns,showDeleteModal,isMediaDoctype,switchRail,toggleGroup,selectLink,openDetail,getLinkIcon,cycleStatusFilter,cycleSortOrder,toggleSelectAll,refreshData,getChildCols,switchTab,createNew,saveRecord,deleteRecord,confirmDelete,addChildRow,goBackToList,triggerFileInput,handleFileSelect,handleDrop,removeFile,toggleTheme,getMimeClass,getMimeLabel,getMockMime,rfqStatusCfg,rfqTransitions,rfqFlowSteps,rfqList,rfqView,rfqCurrent,rfqDoc,rfqTab,rfqDirty,rfqModal,rfqModalReason,rfqErrors,rfqSearch,rfqStatusFilter,activeSalesLink,salesSidebarGroups,rfqTabs,rfqCanEdit,rfqViewPct,rfqFiltered,rfqStatusCounts,rfqDaysleft,rfqOpenDetail,rfqCreateNew,rfqIsCompleted,rfqWfSymbol,rfqGoBack,rfqOnBuyerChange,rfqAddItem,rfqSave,rfqDoTransition,rfqValidate,rfqLoadDoc,selectSalesLink};}}).mount('#app');
 </script>
 </body>
 </html>
